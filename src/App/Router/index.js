@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-export default () => (
+export default ({ toggleTheme }) => (
     <Router>
         <Switch>
             <Route exact path='/'>
                 <h1>Home Page</h1>
-                <button>Hello world</button>
+                <button onClick={toggleTheme}>Hello world</button>
                 <Link to='/second'>Second</Link>
             </Route>
             <Route path='/second'>
