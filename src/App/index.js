@@ -1,8 +1,8 @@
 import React from "react";
+import Router from "./Router";
 
 export default () => (
     <div>
-        <h1>hello</h1>
-        this is my app
+        <Router />
     </div>
 );
