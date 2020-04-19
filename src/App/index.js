@@ -6,10 +6,13 @@ import ResetStyles from "./Styles/Reset";
 import useDarkMode from "./Styles/useDarkMode";
 
 export default () => {
-    const [themeMode, toggleTheme] = useDarkMode();
+    const [themeMode, toggleTheme, componentMounted] = useDarkMode();
+
+    if (!componentMounted) {
+        return <div />;
+    }
 
     return (
-        // eslint-disable-next-line
         <ThemeProvider theme={themeMode}>
             <React.Fragment>
                 <BaseStyles />
