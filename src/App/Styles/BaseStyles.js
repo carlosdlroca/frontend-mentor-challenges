@@ -24,16 +24,4 @@ export default createGlobalStyle`
         background: var(--color-body);
         color: var(--color-text);
     }
-
-
-    h1 {
-        color: var(--color-main);
-    }
-
-    button {
-        color: var(--color-text);
-        background: var(--color-sub);
-        padding: 1rem 2rem;
-        font-size: 2rem;
-    }
 `;
