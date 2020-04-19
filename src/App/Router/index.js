@@ -6,6 +6,7 @@ export default () => (
         <Switch>
             <Route exact path='/'>
                 <h1>Home Page</h1>
+                <button>Hello world</button>
                 <Link to='/second'>Second</Link>
             </Route>
             <Route path='/second'>
