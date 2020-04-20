@@ -1,13 +1,13 @@
 export const lightTheme = {
-    main: "red",
-    sub: "blue",
+    main: "#F67280",
+    sub: "#355C7D",
     text: "#424874",
-    body: "#f4eeff",
+    body: "#FFF",
 };
 
 export const darkTheme = {
-    main: "#a6b1e1",
-    sub: "darkblue",
+    main: "#F67280",
+    sub: "#355C7D",
     text: "white",
     body: "#424874",
 };

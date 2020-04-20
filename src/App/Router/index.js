@@ -1,17 +1,22 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
+import Home from "../../Pages/Home";
+import Challenges from "../../Pages/Challenges";
+import NoMatch from "../../Pages/NoMatch";
+
 export default ({ toggleTheme }) => (
     <Router>
         <Switch>
             <Route exact path='/'>
-                <h1>Home Page</h1>
-                <button onClick={toggleTheme}>Hello world</button>
-                <Link to='/second'>Second</Link>
+                <Home toggleTheme={toggleTheme} />
+                <Link to='/second'>Go to second Page</Link>
             </Route>
-            <Route path='/second'>
-                <h1>Second page</h1>
-                <Link to='/'>Home Page</Link>
+            <Route path='/challenges'>
+                <Challenges toggleTheme={toggleTheme} />
+            </Route>
+            <Route path='*'>
+                <NoMatch toggleTheme={toggleTheme} />
             </Route>
         </Switch>
     </Router>
