@@ -12,4 +12,8 @@ export default createGlobalStyle`
     ol, ul {
         list-style: none;
     }
+
+    a {
+        text-decoration: none;
+    }
 `;
