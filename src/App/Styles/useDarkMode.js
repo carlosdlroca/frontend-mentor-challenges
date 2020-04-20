@@ -11,6 +11,7 @@ export default () => {
     };
 
     const toggleTheme = () => {
+        // eslint-disable-next-line
         if (theme == "light") {
             setMode("dark");
         } else {
@@ -20,14 +21,18 @@ export default () => {
 
     useEffect(() => {
         const localTheme = window.localStorage.getItem("theme");
-        if (localTheme) {
-            setTheme(localTheme);
-        } else {
-            setMode("light");
-        }
+
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches &&
+        !localTheme
+            ? setMode("dark")
+            : localTheme
+            ? setTheme(localTheme)
+            : setMode("light");
+
         setComponentMounted(true);
     }, []);
-
+    // eslint-disable-next-line
     const themeMode = theme == "light" ? lightTheme : darkTheme;
 
     return [themeMode, toggleTheme, componentMounted];
