@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Router from "./Router";
 import { ThemeProvider } from "styled-components";
 import BaseStyles from "./Styles/BaseStyles";
