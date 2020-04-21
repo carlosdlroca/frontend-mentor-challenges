@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { HomeWrapper } from "./Styles";
 import Navbar from "../../components/Navbar";
 
@@ -12,7 +11,7 @@ export default ({ toggleTheme }) => (
             your webdesign skills{" "}
         </p>
         <p>
-            Ranging from beginner to advanced, these challenges can help you
+            Ranging from newbie to advanced, these challenges can help you
             become a better web designer{" "}
         </p>
 
