@@ -5,7 +5,7 @@ export const Navbar = styled.nav`
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding: 3rem 5rem;
+    padding: 2.5rem 5rem;
 
     @media only screen and (max-width: 1024px) {
         justify-content: center;
@@ -21,7 +21,7 @@ export const NavbarLink = styled.li`
     a {
         border-radius: 0.4rem;
         color: #fff;
-        font-size: 2.2rem;
+        font-size: 2.5rem;
         padding: 1rem 2rem;
         transition: background-color 0.2s ease;
         &:hover,
