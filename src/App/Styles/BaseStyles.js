@@ -6,6 +6,7 @@ export default createGlobalStyle`
         --color-sub:  ${(props) => props.theme.sub};
         --color-text: ${(props) => props.theme.text};
         --color-body: ${(props) => props.theme.body};
+        --color-tertiary: ${(props) => props.theme.tertiary};
     }
 
     *, *::after, *::before {
@@ -33,7 +34,7 @@ export default createGlobalStyle`
     }
 
     ::selection {
-        background: #12d3cf;
-        color: var(--color-text);
+        background: var(--color-tertiary);
+        color: #FFF;
     }
 `;
