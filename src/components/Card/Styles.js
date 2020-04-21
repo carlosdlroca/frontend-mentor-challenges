@@ -11,7 +11,7 @@ export const Card = styled.div`
     padding-bottom: 2rem;
 
     border-radius: 1rem;
-    box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0.3rem 0.3rem 0.8rem rgba(0, 0, 0, 0.3);
     background: white;
     color: #565656;
 
@@ -30,8 +30,8 @@ export const CardImage = styled.img`
 
 export const CardButton = styled.button`
     width: 95%;
+    height: 5rem;
     border-radius: 5rem;
-    padding: 1rem;
     font-size: 2.3rem;
     background-color: var(--color-main);
     box-shadow: 0.5rem 0.5rem var(--color-sub);
@@ -49,8 +49,7 @@ export const CardButton = styled.button`
 
     a {
         display: block;
-        height: 100%;
-        width: 100%;
         color: white;
+        padding: 1rem;
     }
 `;
