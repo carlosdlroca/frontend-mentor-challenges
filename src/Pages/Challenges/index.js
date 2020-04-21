@@ -49,6 +49,3 @@ function RouteWithSubRoutes(route) {
         />
     );
 }
-
-// ASK AIDEN MOM IF TEACHER IS IN CONTACT WITH AIDEN
-// Ask Saul mom if they need a laptop
