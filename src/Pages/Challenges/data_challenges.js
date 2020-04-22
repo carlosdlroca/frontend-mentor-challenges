@@ -1,6 +1,4 @@
-import FourCard from "./Newbie/FourCard";
-import ComingSoon from "./Newbie/ComingSoon";
-import SignUpForm from "./Newbie/SignUpForm";
+import Newbie from "./Newbie";
 
 export default {
     newbie: [
@@ -10,7 +8,7 @@ export default {
             image: "/challenges/newbie/four-card-feature.jpg",
             frontend_mentor_link:
                 "https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK",
-            component: FourCard,
+            component: Newbie.FourCards,
         },
         {
             name: "Base Apparel Coming Soon Page",
@@ -18,7 +16,7 @@ export default {
             image: "/challenges/newbie/coming-soon-page.jpg",
             frontend_mentor_link:
                 "https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0",
-            component: ComingSoon,
+            component: Newbie.ComingSoon,
         },
         {
             name: "Intro Component with sign-up form",
@@ -26,7 +24,7 @@ export default {
             image: "/challenges/newbie/intro-component.jpg",
             frontend_mentor_link:
                 "https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1",
-            component: SignUpForm,
+            component: Newbie.SignUpForm,
         },
     ],
 };
