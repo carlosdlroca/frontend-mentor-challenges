@@ -12,8 +12,8 @@ const FourCardsWrapper = styled.main`
     --color-blue: hsl(212, 86%, 64%);
 
     --color-darkblue: hsl(234, 12%, 34%);
-    --color-grayblue: hsl(229, 6%, 66%)
-    --color-light-gray: hsl(0,0%,98%);
+    --color-grayblue: hsl(229, 6%, 66%);
+    --color-light-gray: hsl(0, 0%, 98%);
 
     display: flex;
     flex-direction: column;
