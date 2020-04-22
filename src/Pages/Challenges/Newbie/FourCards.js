@@ -36,6 +36,7 @@ const Header = styled.header`
         margin: 0 auto;
         width: 65%;
         font-size: 1.8rem;
+        color: var(--color-grayblue);
         @media only screen and (max-width: 768px) {
             width: 89%;
             font-size: 1.5rem;
