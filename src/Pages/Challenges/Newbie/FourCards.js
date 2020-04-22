@@ -11,10 +11,6 @@ const FourCardsWrapper = styled.main`
     --color-orange: hsl(34, 97%, 64%);
     --color-blue: hsl(212, 86%, 64%);
 
-    --color-darkblue: hsl(234, 12%, 34%);
-    --color-grayblue: hsl(229, 6%, 66%);
-    --color-light-gray: hsl(0, 0%, 98%);
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,7 +63,7 @@ const Card = styled.div`
     margin: 0 0 var(--margin) var(--margin);
     min-height: 25rem;
 
-    border-top: 0.4rem solid ${(props) => `var(--color-${props.color})`};
+    border-top: 0.8rem solid ${(props) => `var(--color-${props.color})`};
     border-radius: 0.5rem;
     padding: 1rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
