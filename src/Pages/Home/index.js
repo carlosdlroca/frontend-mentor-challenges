@@ -10,6 +10,7 @@ export default ({ toggleTheme }) => (
             Frontend Mentor is a website focused on providing challenges to test
             your webdesign skills{" "}
         </p>
+        <br />
         <p>
             Ranging from newbie to advanced, these challenges can help you
             become a better web designer{" "}

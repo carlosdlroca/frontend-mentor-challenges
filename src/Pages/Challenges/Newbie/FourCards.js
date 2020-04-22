@@ -127,19 +127,19 @@ export default () => (
                 <TeamBuilderIcon />
             </Card>
             <Card color='blue'>
-                <h2 className='Title'>Karma</h2>
-                <p className='Text'>
-                    Regularly evaluates our talent to ensure quality
-                </p>
-                <KarmaIcon />
-            </Card>
-            <Card color='orange'>
                 <h2 className='Title'>Calculator</h2>
                 <p className='Text'>
                     Uses data from past projects to provide better delivery
                     estimates
                 </p>
                 <CalculatorIcon />
+            </Card>
+            <Card color='orange'>
+                <h2 className='Title'>Karma</h2>
+                <p className='Text'>
+                    Regularly evaluates our talent to ensure quality
+                </p>
+                <KarmaIcon />
             </Card>
         </CardsGrid>
     </FourCardsWrapper>
