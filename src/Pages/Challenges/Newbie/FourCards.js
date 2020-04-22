@@ -19,7 +19,6 @@ const FourCardsWrapper = styled.main`
     flex-direction: column;
     align-items: center;
     background-color: #fff;
-    color: var(--color-light-gray);
     font-size: 1.2rem;
 
     padding: 10rem;
@@ -30,9 +29,10 @@ const Header = styled.header`
 
     .Title {
         font-size: 2.9rem;
+        color: var(--color-grayblue);
     }
     .SubTitle {
-        color: var(--color-grayblue);
+        color: var(--color-darkblue);
         font-size: 3.2rem;
         font-weight: 700;
     }
@@ -56,6 +56,7 @@ const CardsGrid = styled.section`
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    width: 90%;
 `;
 
 const Card = styled.div`
@@ -74,10 +75,12 @@ const Card = styled.div`
 
     .Title {
         font-size: 2.5rem;
-        color: var(--color-grayblue);
+        color: var(--color-darkblue);
     }
     .Text {
         font-size: 1.8rem;
+        color: var(--color-grayblue);
+        padding-right: 10rem;
     }
 
     svg {
