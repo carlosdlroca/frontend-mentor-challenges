@@ -7,6 +7,10 @@ export default createGlobalStyle`
         --color-text: ${(props) => props.theme.text};
         --color-body: ${(props) => props.theme.body};
         --color-tertiary: ${(props) => props.theme.tertiary};
+
+        --color-darkblue: hsl(234, 12%, 34%);
+        --color-grayblue: hsl(229, 6%, 66%);
+        --color-light-gray: hsl(0, 0%, 98%);
     }
 
     *, *::after, *::before {
