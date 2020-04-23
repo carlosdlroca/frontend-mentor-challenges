@@ -10,7 +10,6 @@ export default ({ toggleTheme }) => (
         <Switch>
             <Route exact path='/'>
                 <Home toggleTheme={toggleTheme} />
-                <Link to='/second'>Go to second Page</Link>
             </Route>
             <Route path='/challenges'>
                 <Challenges toggleTheme={toggleTheme} />
