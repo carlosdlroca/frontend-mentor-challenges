@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HomeWrapper = styled.main`
+export const Home = styled.main`
     h1 {
         font-size: 4rem;
     }
@@ -12,4 +12,8 @@ export const HomeWrapper = styled.main`
     p {
         font-size: 1.8rem;
     }
+`;
+
+export const Content = styled.section`
+    padding: 1rem 10rem;
 `;
