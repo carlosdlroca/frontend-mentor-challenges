@@ -4,6 +4,7 @@ export default {
     newbie: [
         {
             name: "Four Card Feature Section",
+            param: "four-card-feature-section",
             path: "/challenges/newbie/four-card-feature-section",
             image: "/challenges/newbie/four-card-feature.jpg",
             frontend_mentor_link:
@@ -12,6 +13,7 @@ export default {
         },
         {
             name: "Base Apparel Coming Soon Page",
+            param: "base-apparel-coming-soon-page",
             path: "/challenges/newbie/base-apparel-coming-soon-page",
             image: "/challenges/newbie/coming-soon-page.jpg",
             frontend_mentor_link:
@@ -20,7 +22,8 @@ export default {
         },
         {
             name: "Intro Component with sign-up form",
-            path: "/challenges/newbie/intro-component-with-sign-up-form",
+            param: "intro-component-with-signup-form",
+            path: "/challenges/newbie/intro-component-with-signup-form",
             image: "/challenges/newbie/intro-component.jpg",
             frontend_mentor_link:
                 "https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1",
