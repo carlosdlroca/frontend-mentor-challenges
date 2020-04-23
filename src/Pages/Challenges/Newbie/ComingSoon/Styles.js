@@ -19,6 +19,7 @@ export const ComingSoonPage = styled.main`
     grid-template-rows: 8rem repeat(3, 1fr);
     min-height: 100vh;
     overflow: hidden;
+    background: var(--gradient1);
 
     @media only screen and (max-width: 1111px) {
         --main-area: 3 / 1 / -1 / -1;
