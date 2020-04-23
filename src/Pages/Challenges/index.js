@@ -3,7 +3,6 @@ import { Switch, Route, useRouteMatch, Redirect } from "react-router-dom";
 
 import ChallengesList from "./ChallengesList";
 import Navbar from "../../components/Navbar";
-import NoMatch from "../NoMatch";
 
 import challenges from "./data_challenges";
 
@@ -31,9 +30,6 @@ export default ({ toggleTheme }) => {
             </Route>
             <Route path={`${path}/:difficulty`}>
                 <Redirect to={`${path}/`} />
-            </Route>
-            <Route path='*'>
-                <NoMatch toggleTheme={toggleTheme} />
             </Route>
         </Switch>
     );
