@@ -47,6 +47,10 @@ export const MainContent = styled.section`
     .DarkTitle {
         font-size: 7rem;
         letter-spacing: 2.2rem;
+
+        @media only screen and (max-width: 768px) {
+            font-size: 5rem;
+        }
     }
 
     .RedTitle {
@@ -63,6 +67,10 @@ export const MainContent = styled.section`
         color: var(--color-red-desaturated);
         font-size: 1.8rem;
         margin: 1rem 0;
+
+        @media only screen and (max-width: 768px) {
+            font-size: 1.4rem;
+        }
 
         @media only screen and (min-width: 1500px) {
             width: 50%;
@@ -135,7 +143,7 @@ export const MainContent = styled.section`
             width: 65%;
         }
     }
-    @media only screen and (max-width: 1440px) and (min-width: 1000px) {
+    @media only screen and (max-width: 1440px) {
         .Form {
             width: 100%;
         }
