@@ -13,6 +13,10 @@ export const FourCardsWrapper = styled.main`
     font-size: 1.2rem;
 
     padding: 10rem;
+
+    @media only screen and (max-width: 700px) {
+        padding: 10rem 0;
+    }
 `;
 
 export const Header = styled.header`
