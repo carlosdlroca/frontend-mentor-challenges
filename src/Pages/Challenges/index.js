@@ -16,7 +16,7 @@ export default ({ toggleTheme }) => {
                 <ChallengesList challenges={challenges} />
             </Route>
             <Route path={`${path}/:difficulty/:challenge_name`}>
-                <ChallengeRoute />
+                <ChallengeRoute challenges={challenges} />
             </Route>
             <Route path={`${path}/:difficulty`}>
                 <Redirect to={`${path}/`} />

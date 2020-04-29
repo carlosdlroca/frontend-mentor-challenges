@@ -29,5 +29,14 @@ export default {
                 "https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1",
             component: Newbie.SignUpForm,
         },
+        {
+            name: "Single Price Grid Component",
+            param: "single-price-grid-component",
+            path: "/challenges/newbie/single-price-grid-component",
+            image: "/challenges/newbie/single-price-grid-component.jpg",
+            frontend_mentor_link:
+                "https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc",
+            component: Newbie.SinglePrice,
+        },
     ],
 };
