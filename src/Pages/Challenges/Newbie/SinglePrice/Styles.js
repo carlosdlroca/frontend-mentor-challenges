@@ -22,7 +22,7 @@ export var Grid = styled.section`
         "header header"
         "signup info";
     background-color: white;
-    border-radius: 1.25rem;
+    border-radius: 0.8rem;
     overflow: hidden;
     width: 50%;
     min-height: 2rem;
@@ -73,6 +73,7 @@ export var Info = styled.section`
     color: white;
     ul {
         margin: 1rem 0;
+        font-size: 1.2rem;
         color: var(--color-lightgray);
         li:not(:last-child) {
             margin-bottom: 0.5rem;
@@ -84,7 +85,11 @@ export var Signup = styled.section`
     grid-area: signup;
     position: relative;
     min-height: 5rem;
-    background-color: var(--color-cyan);
+    background-color: #2bb3b1;
+    filter: brightness(0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 
     .Price {
         font-size: 2.5rem;
@@ -105,7 +110,7 @@ export var Signup = styled.section`
         background-color: var(--color-yellow);
         color: white;
         font-size: 2rem;
-        padding: 1rem 6rem;
         border-radius: 1rem;
+        padding: 1rem;
     }
 `;
