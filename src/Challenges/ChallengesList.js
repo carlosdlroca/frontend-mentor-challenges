@@ -1,7 +1,7 @@
 import React from "react";
 import { ChallengesListPage } from "./Styles";
-import Grid from "../../components/Grid";
-import Card from "../../components/Card";
+import Grid from "../components/Grid";
+import Card from "../components/Card";
 
 export default ({ challenges }) => {
     const { newbie } = challenges;

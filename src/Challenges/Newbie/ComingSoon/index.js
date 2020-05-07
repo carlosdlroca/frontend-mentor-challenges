@@ -1,6 +1,6 @@
 import React from "react";
 import { ComingSoonPage, MainContent, ImageContainer, Logo } from "./Styles";
-import Image from "../../../../components/Image";
+import Image from "../../../components/Image";
 import HeroDesktop from "./media/hero-desktop.jpg";
 import HeroMobile from "./media/hero-mobile.jpg";
 
