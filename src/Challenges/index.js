@@ -1,7 +1,7 @@
 import React from "react";
 import { Switch, Route, useRouteMatch, Redirect } from "react-router-dom";
 
-import ChallengeRoute from "../../components/ChallengeRoute";
+import ChallengeRoute from "./ChallengeRoute";
 import ChallengesList from "./ChallengesList";
 import Navbar from "../../components/Navbar";
 import challenges from "./data_challenges";

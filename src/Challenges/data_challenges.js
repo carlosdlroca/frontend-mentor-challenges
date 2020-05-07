@@ -38,5 +38,14 @@ export default {
                 "https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc",
             component: Newbie.SinglePrice,
         },
+        {
+            name: "Launching Soon",
+            param: "launching-soon",
+            path: "/challenges/newbie/launching-soon",
+            image: "/challenges/newbie/launching-soon.jpg",
+            frontend_mentor_link:
+                "https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da",
+            component: Newbie.LaunchingSoon,
+        },
     ],
 };
