@@ -1,7 +1,7 @@
 import Newbie from "./Newbie";
 
 export default {
-    newbie: [
+    Newbie: [
         {
             name: "Four Card Feature Section",
             param: "FourCards",

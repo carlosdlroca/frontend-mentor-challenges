@@ -4,7 +4,7 @@ import Grid from "../components/Grid";
 import Card from "../components/Card";
 
 export default ({ challenges }) => {
-    const { newbie } = challenges;
+    const { Newbie } = challenges;
     const renderChallengeCard = ({
         name,
         path,
@@ -19,8 +19,8 @@ export default ({ challenges }) => {
     );
     return (
         <ChallengesListPage>
-            <h1>newbie Challenges: </h1>
-            <Grid>{newbie.map(renderChallengeCard)}</Grid>
+            <h1>Newbie Challenges: </h1>
+            <Grid>{Newbie.map(renderChallengeCard)}</Grid>
         </ChallengesListPage>
     );
 };
