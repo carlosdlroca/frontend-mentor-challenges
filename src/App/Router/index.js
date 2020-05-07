@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Home from "../../Pages/Home";
-import Challenges from "../../Pages/Challenges";
+import Challenges from "../../Challenges";
 import NoMatch from "../../Pages/NoMatch";
 
 export default ({ toggleTheme }) => (
