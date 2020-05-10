@@ -47,5 +47,14 @@ export default {
                 "https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da",
             component: Newbie.LaunchingSoon,
         },
+        {
+            name: "AlternatingFeature",
+            param: "AlternatingFeature",
+            path: "/challenges/Newbie/AlternatingFeature",
+            image: "/challenges/Newbie/AlternatingFeature.jpg",
+            frontend_mentor_link:
+                "https://www.frontendmentor.io/challenges/huddle-landing-page-with-alternating-feature-blocks-5ca5f5981e82137ec91a5100",
+            component: Newbie.AlternatingFeature,
+        },
     ],
 };

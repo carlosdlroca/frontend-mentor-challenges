@@ -6,7 +6,6 @@ export const Nav = styled.nav`
     left: 0;
 
     display: flex;
-    color: blue;
 
     svg {
         fill: var(--color-main);
