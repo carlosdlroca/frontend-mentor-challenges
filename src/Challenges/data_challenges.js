@@ -56,5 +56,14 @@ export default {
                 "https://www.frontendmentor.io/challenges/huddle-landing-page-with-alternating-feature-blocks-5ca5f5981e82137ec91a5100",
             component: Newbie.AlternatingFeature,
         },
+        {
+            name: "Bootcamp Slider",
+            param: "BootcampSlider",
+            path: "/challenges/Newbie/BootcampSlider",
+            image: "/challenges/Newbie/BootcampSlider.jpg",
+            frontend_mentor_link:
+                "https://www.frontendmentor.io/challenges/coding-bootcamp-testimonials-slider-4FNyLA8JL",
+            component: Newbie.BootcampSlider,
+        },
     ],
 };

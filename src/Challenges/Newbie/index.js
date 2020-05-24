@@ -5,6 +5,7 @@ const FourCards = loadable(() => import("./FourCards"));
 const SignUpForm = loadable(() => import("./SignUpForm"));
 const SinglePrice = loadable(() => import("./SinglePrice"));
 const LaunchingSoon = loadable(() => import("./LaunchingSoon"));
+const BootcampSlider = loadable(() => import("./BootcampSlider"));
 const AlternatingFeature = loadable(() => import("./AlternatingFeature"));
 
 export default {
@@ -13,5 +14,6 @@ export default {
     SignUpForm,
     SinglePrice,
     LaunchingSoon,
+    BootcampSlider,
     AlternatingFeature,
 };
