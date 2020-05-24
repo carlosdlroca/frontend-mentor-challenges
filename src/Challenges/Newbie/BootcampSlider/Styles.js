@@ -116,7 +116,6 @@ export const Testimonial = styled.section`
         .Headshot {
             display: block;
             object-fit: cover;
-            transform: translateX(-10rem);
 
             @media only screen and (max-width: 1200px) {
                 transform: translateX(-1rem);
