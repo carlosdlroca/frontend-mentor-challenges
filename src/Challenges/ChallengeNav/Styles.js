@@ -10,4 +10,5 @@ export const Nav = styled.nav`
     svg {
         fill: var(--color-main);
     }
+    z-index: 999;
 `;
