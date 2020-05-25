@@ -65,5 +65,14 @@ export default {
                 "https://www.frontendmentor.io/challenges/coding-bootcamp-testimonials-slider-4FNyLA8JL",
             component: Newbie.BootcampSlider,
         },
+        {
+            name: "Huddle Landing Page",
+            param: "LandingPage",
+            path: "/challenges/Newbie/LandingPage",
+            image: "/challenges/Newbie/LandingPage.jpg",
+            frontend_mentor_link:
+                "https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0",
+            component: Newbie.LandingPage,
+        },
     ],
 };
