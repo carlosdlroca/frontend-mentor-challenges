@@ -7,17 +7,15 @@
     background-position: center;
     color: white;
     padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .LandingNav {
     padding-left: 4rem;
 }
 
-.LandingFooter {
-    display: flex;
-    justify-content: flex-end;
-    padding: 1rem 5rem;
-}
 
 .LandingSection {
     display: flex;
@@ -64,6 +62,13 @@
     margin-bottom: 4rem;
 }
 
+.LandingFooter {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 5rem;
+    margin-bottom: 5rem;
+}
+
 .LandingFooter svg {
     --size: 5rem;
     height: var(--size);
@@ -81,6 +86,58 @@
     cursor: pointer;
 }
 
-.Landing svg:not(:last-child) {
+.LandingFooter svg:not(:last-child) {
     margin-right: 1rem;
+}
+
+
+@media only screen and (max-width: 1400px) {
+    .LandingSection {
+        padding: 1rem 5rem;
+    }
+
+    .LandingRight {
+        padding-left: 7.5rem;
+    }
+
+    .LandingRight .LandingTitle {
+        font-size: 3.5rem;
+        width: 100%;
+    }
+
+    .LandingRight .LandingText {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1070px) {
+    .LandingSection {
+        flex-direction: column;
+        margin: 5rem 0;
+    }
+
+    .LandingRight {
+        align-items: center;
+        margin-top: 5rem;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .LandingFooter {
+        justify-content: center;
+    }
+
+    .LandingFooter svg:not(:last-child) {
+        margin-right: 2rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .LandingRight .LandingTitle {
+        font-size: 3rem;
+    }
+
+    .LandingRight .LandingText {
+        font-size: 1.7rem;
+    }
 }
