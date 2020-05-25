@@ -8,19 +8,19 @@ import { ReactComponent as TwitterSvg } from "../../shared/icons/twitter.svg";
 
 import "./Styles.css";
 export default () => (
-    <main>
-        <nav className='Nav'>
+    <main className='LandingMain'>
+        <nav className='LandingNav'>
             <HuddleLogo />
         </nav>
-        <section>
-            <div className='Left'>
+        <section className='LandingSection'>
+            <div className='LandingLeft'>
                 <img src={MockupSvg} alt='Mockup' />
             </div>
-            <div className='Right'>
-                <h1 className='Title'>
+            <div className='LandingRight'>
+                <h1 className='LandingTitle'>
                     Build The Community Your Fans Will Love
                 </h1>
-                <p className='Text'>
+                <p className='LandingText'>
                     Huddle re-imagines the way we build communities. You have a
                     voice, but so does your audience. Create connections with
                     your users as you engage in genuine discussion.
@@ -28,7 +28,7 @@ export default () => (
                 <button>Register</button>
             </div>
         </section>
-        <footer>
+        <footer className='LandingFooter'>
             <FacebookSvg />
             <InstagramSvg />
             <TwitterSvg />

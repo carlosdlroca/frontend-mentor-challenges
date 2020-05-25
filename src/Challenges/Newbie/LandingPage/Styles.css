@@ -1,4 +1,4 @@
-main {
+.LandingMain {
     --color-violet: hsl(257, 40%, 49%);
     min-height: 100vh;
     background-color: var(--color-violet);
@@ -9,36 +9,32 @@ main {
     padding-top: 4rem;
 }
 
-.Nav {
+.LandingNav {
     padding-left: 4rem;
 }
 
-nav:not(.Nav) svg {
-    fill: white;
-}
-
-footer {
+.LandingFooter {
     display: flex;
     justify-content: flex-end;
     padding: 1rem 5rem;
 }
 
-section {
+.LandingSection {
     display: flex;
     padding: 1rem 8rem;
     margin: 10rem 0 5rem;
 }
 
-.Left {
+.LandingLeft {
     flex: 0 0 50%;
 }
 
-.Left img {
+.LandingLeft img {
     display: block;
     width: 100%;
 }
 
-.Right {
+.LandingRight {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -47,15 +43,15 @@ section {
     padding-left: 15rem;
 }
 
-.Right .Title {
+.LandingRight .LandingTitle {
     font-size: 4.2rem;
 }
 
-.Right .Text {
+.LandingRight .LandingText {
     font-size: 2rem;
 }
 
-.Right button {
+.LandingRight button {
     border-radius: 10rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, .5);
     color: var(--color-violet);
@@ -63,12 +59,12 @@ section {
     padding: 1.5rem 4rem;
 }
 
-.Right>*:not(:last-child) {
+.LandingRight>*:not(:last-child) {
     width: 75%;
     margin-bottom: 4rem;
 }
 
-footer svg {
+.LandingFooter svg {
     --size: 5rem;
     height: var(--size);
     width: var(--size);
@@ -79,12 +75,12 @@ footer svg {
     transition: all .2s ease;
 }
 
-footer svg:hover {
+.LandingFooter svg:hover {
     fill: gray;
     border-color: gray;
     cursor: pointer;
 }
 
-footer svg:not(:last-child) {
+.Landing svg:not(:last-child) {
     margin-right: 1rem;
 }
