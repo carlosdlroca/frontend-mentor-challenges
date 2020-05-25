@@ -1,0 +1,90 @@
+main {
+    --color-violet: hsl(257, 40%, 49%);
+    min-height: 100vh;
+    background-color: var(--color-violet);
+    background-image: url('./media//bg-desktop.svg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding-top: 4rem;
+}
+
+.Nav {
+    padding-left: 4rem;
+}
+
+nav:not(.Nav) svg {
+    fill: white;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 5rem;
+}
+
+section {
+    display: flex;
+    padding: 1rem 8rem;
+    margin: 10rem 0 5rem;
+}
+
+.Left {
+    flex: 0 0 50%;
+}
+
+.Left img {
+    display: block;
+    width: 100%;
+}
+
+.Right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1rem;
+    padding-left: 15rem;
+}
+
+.Right .Title {
+    font-size: 4.2rem;
+}
+
+.Right .Text {
+    font-size: 2rem;
+}
+
+.Right button {
+    border-radius: 10rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .5);
+    color: var(--color-violet);
+    font-size: 2rem;
+    padding: 1.5rem 4rem;
+}
+
+.Right>*:not(:last-child) {
+    width: 75%;
+    margin-bottom: 4rem;
+}
+
+footer svg {
+    --size: 5rem;
+    height: var(--size);
+    width: var(--size);
+    fill: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 1rem;
+    transition: all .2s ease;
+}
+
+footer svg:hover {
+    fill: gray;
+    border-color: gray;
+    cursor: pointer;
+}
+
+footer svg:not(:last-child) {
+    margin-right: 1rem;
+}
