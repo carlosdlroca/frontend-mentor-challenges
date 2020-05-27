@@ -5,8 +5,6 @@ export default {
         {
             name: "Four Card Feature Section",
             param: "FourCards",
-            path: "/challenges/Newbie/FourCards",
-            image: "/challenges/Newbie/FourCards.jpg",
             frontend_mentor_link:
                 "https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK",
             component: Newbie.FourCards,
@@ -14,8 +12,6 @@ export default {
         {
             name: "Base Apparel Coming Soon Page",
             param: "ComingSoon",
-            path: "/challenges/Newbie/ComingSoon",
-            image: "/challenges/Newbie/ComingSoon.jpg",
             frontend_mentor_link:
                 "https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0",
             component: Newbie.ComingSoon,
@@ -23,8 +19,6 @@ export default {
         {
             name: "Intro Component with sign-up form",
             param: "SignUpForm",
-            path: "/challenges/Newbie/SignUpForm",
-            image: "/challenges/Newbie/SignUpForm.jpg",
             frontend_mentor_link:
                 "https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1",
             component: Newbie.SignUpForm,
@@ -32,8 +26,6 @@ export default {
         {
             name: "Single Price Grid Component",
             param: "SinglePrice",
-            path: "/challenges/Newbie/SinglePrice",
-            image: "/challenges/Newbie/SinglePrice.jpg",
             frontend_mentor_link:
                 "https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc",
             component: Newbie.SinglePrice,
@@ -41,8 +33,6 @@ export default {
         {
             name: "Launching Soon",
             param: "LaunchingSoon",
-            path: "/challenges/Newbie/LaunchingSoon",
-            image: "/challenges/Newbie/LaunchingSoon.jpg",
             frontend_mentor_link:
                 "https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da",
             component: Newbie.LaunchingSoon,
@@ -50,8 +40,6 @@ export default {
         {
             name: "AlternatingFeature",
             param: "AlternatingFeature",
-            path: "/challenges/Newbie/AlternatingFeature",
-            image: "/challenges/Newbie/AlternatingFeature.jpg",
             frontend_mentor_link:
                 "https://www.frontendmentor.io/challenges/huddle-landing-page-with-alternating-feature-blocks-5ca5f5981e82137ec91a5100",
             component: Newbie.AlternatingFeature,
@@ -59,8 +47,6 @@ export default {
         {
             name: "Bootcamp Slider",
             param: "BootcampSlider",
-            path: "/challenges/Newbie/BootcampSlider",
-            image: "/challenges/Newbie/BootcampSlider.jpg",
             frontend_mentor_link:
                 "https://www.frontendmentor.io/challenges/coding-bootcamp-testimonials-slider-4FNyLA8JL",
             component: Newbie.BootcampSlider,
@@ -68,8 +54,6 @@ export default {
         {
             name: "Huddle Landing Page",
             param: "LandingPage",
-            path: "/challenges/Newbie/LandingPage",
-            image: "/challenges/Newbie/LandingPage.jpg",
             frontend_mentor_link:
                 "https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0",
             component: Newbie.LandingPage,
