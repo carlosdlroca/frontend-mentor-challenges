@@ -4,23 +4,37 @@ import Grid from "../components/Grid";
 import Card from "../components/Card";
 
 export default ({ challenges }) => {
-    const { Newbie } = challenges;
-    const renderChallengeCard = ({
-        name,
-        path,
-        image,
-        frontend_mentor_link,
-    }) => (
-        <Card key={name} title={name} image_src={image} link_url={path}>
-            <a style={{ fontSize: "1.8rem" }} href={frontend_mentor_link}>
-                visit original challenge
-            </a>
-        </Card>
-    );
+    function createCardComponents(difficulty) {
+        return challenges[difficulty].map(
+            ({ name, param, frontend_mentor_link }) => {
+                var path = `/challenges/${difficulty}/${param}`;
+                return (
+                    <Card
+                        key={name}
+                        title={name}
+                        image_src={path + ".jpg"}
+                        link_url={path}
+                    >
+                        <a
+                            style={{ fontSize: "1.8rem" }}
+                            href={frontend_mentor_link}
+                        >
+                            visit original challenge
+                        </a>
+                    </Card>
+                );
+            }
+        );
+    }
+
     return (
         <ChallengesListPage>
-            <h1>Newbie Challenges: </h1>
-            <Grid>{Newbie.map(renderChallengeCard)}</Grid>
+            {Object.keys(challenges).map((difficulty) => (
+                <div key={difficulty}>
+                    <h1 id={difficulty}>{difficulty} Challenges: </h1>
+                    <Grid>{createCardComponents(difficulty)}</Grid>
+                </div>
+            ))}
         </ChallengesListPage>
     );
 };
