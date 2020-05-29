@@ -7,6 +7,7 @@ const SinglePrice = loadable(() => import("./SinglePrice"));
 const LandingPage = loadable(() => import("./LandingPage"));
 const LaunchingSoon = loadable(() => import("./LaunchingSoon"));
 const BootcampSlider = loadable(() => import("./BootcampSlider"));
+const FyloLandingPage = loadable(() => import("./FyloLandingPage"));
 const AlternatingFeature = loadable(() => import("./AlternatingFeature"));
 
 export default {
@@ -17,5 +18,6 @@ export default {
     LandingPage,
     LaunchingSoon,
     BootcampSlider,
+    FyloLandingPage,
     AlternatingFeature,
 };
