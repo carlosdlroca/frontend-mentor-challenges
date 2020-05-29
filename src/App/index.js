@@ -4,6 +4,7 @@ import { ThemeProvider } from "styled-components";
 import BaseStyles from "./Styles/BaseStyles";
 import ResetStyles from "./Styles/Reset";
 import useDarkMode from "./Styles/useDarkMode";
+import DarkModeProvider from "./Styles/DarkModeContext";
 
 export default () => {
     const [themeMode, toggleTheme, componentMounted] = useDarkMode();
@@ -17,7 +18,9 @@ export default () => {
             <React.Fragment>
                 <BaseStyles />
                 <ResetStyles />
-                <Router toggleTheme={toggleTheme} />
+                <DarkModeProvider toggleTheme={toggleTheme}>
+                    <Router />
+                </DarkModeProvider>
             </React.Fragment>
         </ThemeProvider>
     );

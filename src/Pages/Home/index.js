@@ -2,9 +2,9 @@ import React from "react";
 import { Home, Content } from "./Styles";
 import Navbar from "../../components/Navbar";
 
-export default ({ toggleTheme }) => (
+export default () => (
     <Home>
-        <Navbar toggleTheme={toggleTheme} />
+        <Navbar />
         <Content>
             <h1>Frontend Mentor Challenges</h1>
             <p>

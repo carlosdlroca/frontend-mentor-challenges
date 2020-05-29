@@ -6,13 +6,13 @@ import ChallengesList from "./ChallengesList";
 import Navbar from "../components/Navbar";
 import challenges from "./data_challenges";
 
-export default ({ toggleTheme }) => {
+export default () => {
     const { path } = useRouteMatch();
 
     return (
         <Switch>
             <Route exact path={path}>
-                <Navbar toggleTheme={toggleTheme} />
+                <Navbar />
                 <ChallengesList challenges={challenges} />
             </Route>
             <Route path={`${path}/:difficulty/:challenge_name`}>

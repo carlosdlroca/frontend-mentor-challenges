@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 
-export default ({ toggleTheme }) => (
+export default () => (
     <React.Fragment>
-        <Navbar toggleTheme={toggleTheme} />
+        <Navbar />
         <h1>Sorry, that page doesnt exist</h1>
         <ul style={{ display: "flex", flexDirection: "column" }}>
             <li>

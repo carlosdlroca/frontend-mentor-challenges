@@ -5,17 +5,17 @@ import Home from "../../Pages/Home";
 import Challenges from "../../Challenges";
 import NoMatch from "../../Pages/NoMatch";
 
-export default ({ toggleTheme }) => (
+export default () => (
     <Router>
         <Switch>
             <Route exact path='/'>
-                <Home toggleTheme={toggleTheme} />
+                <Home />
             </Route>
             <Route path='/challenges'>
-                <Challenges toggleTheme={toggleTheme} />
+                <Challenges />
             </Route>
             <Route path='*'>
-                <NoMatch toggleTheme={toggleTheme} />
+                <NoMatch />
             </Route>
         </Switch>
     </Router>
