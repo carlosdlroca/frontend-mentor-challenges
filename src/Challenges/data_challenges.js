@@ -58,5 +58,12 @@ export default {
                 "https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0",
             component: Newbie.LandingPage,
         },
+        {
+            name: "Fylo Landing Page",
+            param: "FyloLandingPage",
+            frontend_mentor_link:
+                "https://www.frontendmentor.io/challenges/fylo-landing-page-with-two-column-layout-5ca5ef041e82137ec91a50f5",
+            component: Newbie.FyloLandingPage,
+        },
     ],
 };
