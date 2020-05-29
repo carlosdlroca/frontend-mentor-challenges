@@ -19,6 +19,7 @@ export const NavbarLinks = styled.ul`
 
 export const NavbarLink = styled.li`
     a {
+        display: flex;
         border-radius: 0.4rem;
         color: #fff;
         font-size: 2.5rem;
@@ -27,6 +28,10 @@ export const NavbarLink = styled.li`
         &:hover,
         &:focus {
             background-color: var(--color-sub);
+        }
+
+        svg {
+            fill: var(--color-body);
         }
     }
 

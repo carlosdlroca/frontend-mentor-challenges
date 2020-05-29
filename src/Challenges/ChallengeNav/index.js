@@ -1,6 +1,7 @@
 import React from "react";
 import { Nav } from "./Styles";
-import { ReactComponent as GithubIcon } from "./github.svg";
+import { ReactComponent as GithubIcon } from "../shared/icons/github.svg";
+
 const baseGHURL =
     "https://github.com/carlosdlroca/frontend-mentor-challenges/tree/master/src/Challenges";
 
