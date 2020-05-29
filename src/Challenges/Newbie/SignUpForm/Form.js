@@ -45,7 +45,7 @@ export default () => {
             <Input placeholder={"First Name"} />
             <Input placeholder={"Last Name"} />
             <Input placeholder={"Email"} />
-            <Input placeholder={"Password"} />
+            <Input placeholder={"Password"} type='password' />
             <Button>claim your free trial</Button>
             <p className='Terms'>
                 By clicking the button, you are agreeing to our{" "}
