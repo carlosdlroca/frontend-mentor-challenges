@@ -16,7 +16,7 @@ export var Page = styled.main`
     background-position: center;
     background-image: url(${BGImageMobile});
     background-color: var(--bg-color);
-
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
