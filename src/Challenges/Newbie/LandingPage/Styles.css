@@ -16,7 +16,6 @@
     padding-left: 4rem;
 }
 
-
 .LandingSection {
     display: flex;
     padding: 1rem 8rem;
@@ -49,14 +48,6 @@
     font-size: 2rem;
 }
 
-.LandingRight button {
-    border-radius: 10rem;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, .5);
-    color: var(--color-violet);
-    font-size: 2rem;
-    padding: 1.5rem 4rem;
-}
-
 .LandingRight>*:not(:last-child) {
     width: 75%;
     margin-bottom: 4rem;
@@ -69,42 +60,17 @@
     margin-bottom: 5rem;
 }
 
-.LandingFooter svg {
-    --size: 5rem;
-    height: var(--size);
-    width: var(--size);
-    fill: white;
-    border: 1px solid white;
-    border-radius: 50%;
-    padding: 1rem;
-    transition: all .2s ease;
-}
-
-.LandingFooter svg:hover {
-    fill: gray;
-    border-color: gray;
-    cursor: pointer;
-}
-
-.LandingFooter svg:not(:last-child) {
-    margin-right: 1rem;
-}
-
-
 @media only screen and (max-width: 1400px) {
     .LandingSection {
         padding: 1rem 5rem;
     }
-
     .LandingRight {
         padding-left: 7.5rem;
     }
-
     .LandingRight .LandingTitle {
         font-size: 3.5rem;
         width: 100%;
     }
-
     .LandingRight .LandingText {
         width: 100%;
     }
@@ -115,18 +81,15 @@
         flex-direction: column;
         margin: 5rem 0;
     }
-
     .LandingRight {
         align-items: center;
         margin-top: 5rem;
         padding-left: 0;
         text-align: center;
     }
-
     .LandingFooter {
         justify-content: center;
     }
-
     .LandingFooter svg:not(:last-child) {
         margin-right: 2rem;
     }
@@ -136,7 +99,6 @@
     .LandingRight .LandingTitle {
         font-size: 3rem;
     }
-
     .LandingRight .LandingText {
         font-size: 1.7rem;
     }

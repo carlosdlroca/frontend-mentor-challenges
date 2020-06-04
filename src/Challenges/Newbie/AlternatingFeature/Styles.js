@@ -11,6 +11,42 @@ export const Page = styled.main`
     background-color: white;
 
     min-height: 100vh;
+
+    footer {
+        background-color: var(--color-dark-cyan);
+        position: relative;
+        padding-top: 20rem;
+        margin-top: 20rem;
+        & > svg path {
+            fill: white;
+        }
+        .Action {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -60%);
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            background: white;
+            border-radius: 2rem;
+            box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+            color: var(--color-dark-cyan);
+            padding: 7rem 1rem;
+            width: min(75%, 84rem);
+
+            .ActionTitle {
+                font-size: clamp(2.3rem, 1.7vw, 4rem);
+                margin-bottom: 4rem;
+            }
+
+            @media only screen and (max-width: 560px) {
+                padding: 5rem 1rem;
+            }
+        }
+    }
 `;
 
 export const Header = styled.header`
@@ -44,11 +80,6 @@ export const Header = styled.header`
                 font-size: 2.2rem;
                 font-weight: 500;
                 width: 80%;
-            }
-            button {
-                font-size: 1.5rem;
-                font-weight: bold;
-                box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
             }
 
             & > * {
@@ -123,17 +154,6 @@ export const Nav = styled.nav`
     }
 `;
 
-export const Button = styled.button`
-    padding: 2rem 4.5rem;
-
-    background-color: ${(props) => props.bgColor};
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
-    color: ${(props) => props.color};
-
-    border-radius: 4rem;
-    font-size: 2rem;
-`;
-
 export const Features = styled.section`
     display: flex;
     flex-direction: column;
@@ -199,151 +219,5 @@ export const FeatureBlock = styled.div`
             max-width: 80%;
             margin-bottom: 3rem;
         }
-    }
-`;
-
-export const Footer = styled.footer`
-    background-color: var(--color-dark-cyan);
-    font-size: 1.4rem;
-    margin-top: 20rem;
-    padding: 20rem 10rem 10rem;
-    position: relative;
-
-    --copyright-align: right;
-    .Action {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translate(-50%, -60%);
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        background: white;
-        border-radius: 2rem;
-        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
-        color: var(--color-dark-cyan);
-        padding: 7rem 1rem;
-        width: min(75%, 84rem);
-
-        .ActionTitle {
-            font-size: clamp(2rem, 1.5vw, 3rem);
-            margin-bottom: 4rem;
-        }
-
-        @media only screen and (max-width: 560px) {
-            padding: 5rem 1rem;
-        }
-    }
-
-    .FooterContent {
-        .Company-Info {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            & > * {
-                flex: 0 0 29%;
-            }
-
-            @media only screen and (max-width: 845px) {
-                flex-direction: column;
-                --copyright-align: center;
-                & > * {
-                    margin-bottom: 4rem;
-                    flex: 1;
-                }
-
-                .General-Info {
-                    li {
-                        width: 80%;
-                    }
-                }
-
-                .Website-Links {
-                    li {
-                        flex: 100%;
-                        margin-bottom: 2.5rem;
-                        font-size: 2rem;
-                    }
-                }
-
-                .SocialMedia-Links {
-                    align-self: center;
-                }
-            }
-        }
-
-        .General-Info {
-            li {
-                margin-bottom: 2.4rem;
-                svg {
-                    margin-right: 1rem;
-                }
-            }
-        }
-
-        .Website-Links {
-            display: flex;
-            flex-flow: row wrap;
-
-            li {
-                flex: 0 0 50%;
-                font-size: 1.5rem;
-                margin-bottom: 2rem;
-                &:hover {
-                    cursor: pointer;
-                    text-decoration: underline;
-                }
-            }
-        }
-
-        .SocialMedia-Links {
-            display: flex;
-            justify-content: center;
-            --hover-color: white;
-            li {
-                border: 0.1rem solid var(--hover-color);
-                border-radius: 50%;
-                margin-right: 2rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 1rem;
-
-                transition: all 0.2s ease;
-                svg {
-                    --size: 2.4rem;
-                    width: var(--size);
-                    height: var(--size);
-                    fill: var(--hover-color);
-                    transition: all 0.2s ease;
-                }
-
-                &:hover {
-                    cursor: pointer;
-                    --hover-color: var(--color-pink);
-                }
-            }
-        }
-
-        .Logo {
-            path {
-                fill: white;
-            }
-            margin-bottom: 3rem;
-        }
-    }
-
-    .Copyright {
-        text-align: right;
-
-        @media only screen and (max-width: 845px) {
-            text-align: center;
-        }
-    }
-
-    @media only screen and (max-width: 1020px) {
-        padding: 20rem 2rem 5rem;
     }
 `;

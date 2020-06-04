@@ -1,35 +1,36 @@
 import React from "react";
-import {
-    Page,
-    Nav,
-    Header,
-    Button,
-    Features,
-    FeatureBlock,
-    Footer,
-} from "./Styles";
+import Footer from "../../shared/components/Footer";
+import { Page, Nav, Header, Features, FeatureBlock } from "./Styles";
+import { PillButton } from "../../shared/components/Button";
 import { ReactComponent as HuddleLogo } from "./media/logo.svg";
 import MockupSvg from "./media/illustration-mockups.svg";
 import GrowTogetherSvg from "./media/illustration-grow-together.svg";
 import FlowingConversationsSvg from "./media/illustration-flowing-conversation.svg";
 import YourUsersSvg from "./media/illustration-your-users.svg";
 
-import { ReactComponent as EmailIcon } from "./media/icon-email.svg";
-import { ReactComponent as LocationIcon } from "./media/icon-location.svg";
-import { ReactComponent as PhoneIcon } from "./media/icon-phone.svg";
+const PaddedButton = (props) => (
+    <PillButton {...props} padding={"2rem 4.5rem"} font-size={"2rem"}>
+        {props.children}
+    </PillButton>
+);
 
-import { ReactComponent as FacebookIcon } from "../../shared/icons/facebook-f.svg";
-import { ReactComponent as TwitterIcon } from "../../shared/icons/twitter.svg";
-import { ReactComponent as InstagramIcon } from "../../shared/icons/instagram.svg";
+const GetStartedButton = () => (
+    <PaddedButton backgroundColor={"var(--color-pink)"} textColor={"white"}>
+        Get Started For Free
+    </PaddedButton>
+);
 
 export default () => (
     <Page>
         <Header>
             <Nav>
                 <HuddleLogo />
-                <Button color={"var(--color-dark-cyan)"} bgColor={"white"}>
+                <PaddedButton
+                    textColor={"var(--color-dark-cyan)"}
+                    backgroundColor={"white"}
+                >
                     Try it Free
-                </Button>
+                </PaddedButton>
             </Nav>
 
             <section className='HeaderContent'>
@@ -43,9 +44,7 @@ export default () => (
                         connections with your users as you engage in genuine
                         discussion.
                     </h2>
-                    <Button color={"white"} bgColor={"var(--color-pink)"}>
-                        Get Started For Free
-                    </Button>
+                    <GetStartedButton />
                 </div>
                 <div className='Image'>
                     <img src={MockupSvg} alt='Mockup' />
@@ -98,63 +97,12 @@ export default () => (
             </FeatureBlock>
         </Features>
 
-        <Footer>
+        <Footer Logo={HuddleLogo} location email phone>
             <div className='Action'>
                 <strong className='ActionTitle'>
                     Ready To Build Your Community?
                 </strong>
-                <Button bgColor='var(--color-pink)' color={"white"}>
-                    Get Started For Free
-                </Button>
-            </div>
-
-            <div className='FooterContent'>
-                <div className='Logo'>
-                    <HuddleLogo />
-                </div>
-                <div className='Company-Info'>
-                    <ul className='General-Info'>
-                        <li>
-                            <LocationIcon />
-                            <span className='Text'>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua
-                            </span>
-                        </li>
-                        <li>
-                            <PhoneIcon />
-                            <span className='Text'>+1-543-123-4567</span>
-                        </li>
-                        <li>
-                            <EmailIcon />
-                            <span className='Text'>example@huddle.com</span>
-                        </li>
-                    </ul>
-                    <ul className='Website-Links'>
-                        <li>About Us</li>
-                        <li>Career</li>
-                        <li>What We Do</li>
-                        <li>Blog</li>
-                        <li>FAQ</li>
-                        <li>Contact Us</li>
-                    </ul>
-                    <ul className='SocialMedia-Links'>
-                        <li>
-                            <FacebookIcon />
-                        </li>
-                        <li>
-                            <TwitterIcon />
-                        </li>
-                        <li>
-                            <InstagramIcon />
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div className='Copyright'>
-                &copy; Copyright 2018 Huddle. All rights reserved.
+                <GetStartedButton />
             </div>
         </Footer>
     </Page>

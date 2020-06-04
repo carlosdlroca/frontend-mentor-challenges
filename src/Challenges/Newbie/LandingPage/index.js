@@ -1,12 +1,13 @@
 import React from "react";
 
+import { PillButton } from "../../shared/components/Button";
+
 import MockupSvg from "./media/illustration-mockups.svg";
 import { ReactComponent as HuddleLogo } from "./media/logo.svg";
-import { ReactComponent as FacebookSvg } from "../../shared/icons/facebook-f.svg";
-import { ReactComponent as InstagramSvg } from "../../shared/icons/instagram.svg";
-import { ReactComponent as TwitterSvg } from "../../shared/icons/twitter.svg";
+import SocialMediaLinks from "../../shared/components/SocialMediaLinks";
 
 import "./Styles.css";
+
 export default () => (
     <main className='LandingMain'>
         <nav className='LandingNav'>
@@ -25,13 +26,17 @@ export default () => (
                     voice, but so does your audience. Create connections with
                     your users as you engage in genuine discussion.
                 </p>
-                <button>Register</button>
+                <PillButton
+                    backgroundColor={"white"}
+                    textColor={"var(--color-violet)"}
+                    padding={"1.5rem 4rem"}
+                >
+                    Register
+                </PillButton>
             </div>
         </section>
         <footer className='LandingFooter'>
-            <FacebookSvg />
-            <InstagramSvg />
-            <TwitterSvg />
+            <SocialMediaLinks />
         </footer>
     </main>
 );

@@ -24,7 +24,7 @@ export var Grid = styled.section`
     background-color: white;
     border-radius: 0.8rem;
     overflow: hidden;
-    width: 50%;
+    width: min(945px, 96%);
     min-height: 2rem;
     & > * {
         padding: 3rem;
@@ -41,10 +41,6 @@ export var Grid = styled.section`
             "header"
             "signup"
             "info";
-    }
-
-    @media only screen and (max-width: 790px) {
-        width: 95%;
     }
 `;
 
@@ -104,13 +100,5 @@ export var Signup = styled.section`
     p {
         margin: 2rem 0;
         font-size: 1.3rem;
-    }
-
-    button {
-        background-color: var(--color-yellow);
-        color: white;
-        font-size: 2rem;
-        border-radius: 1rem;
-        padding: 1rem;
     }
 `;

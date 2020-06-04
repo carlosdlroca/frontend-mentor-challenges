@@ -1,5 +1,6 @@
 import React from "react";
 import { Page, Grid, Header, Signup, Info } from "./Styles";
+import { RoundedButton } from "../../shared/components/Button";
 
 export default () => (
     <Page>
@@ -22,7 +23,13 @@ export default () => (
                     <span className='Rate'>per month</span>
                 </p>
                 <p>Full access for less than $1 a day</p>
-                <button className='button'>Sign up</button>
+                <RoundedButton
+                    backgroundColor={"var(--color-yellow)"}
+                    textColor={"white"}
+                    padding={"1rem"}
+                >
+                    Sign up
+                </RoundedButton>
             </Signup>
             <Info>
                 <h2 className='Title'>Why US</h2>
